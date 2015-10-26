@@ -1,0 +1,62 @@
+$card: #DF4A2E;
+$bg: #F2F1ED;
+$nav-text: #4C4C4C;
+$detail-text: #999999;
+$branding-red: #DF4A2E;
+
+
+body {
+	background: $bg;
+	margin: 0 auto;
+}
+
+.index2_promoHeader {
+	padding: 0em 0em 2em 0em;
+	// background-color: $card;
+	// height: 35em;
+}
+
+.gameOfThrones {
+	width: 100%;
+	z-index: -1;
+}
+
+// .index2_wrapper {
+// 	@include outer-container;
+// }
+
+
+.index2_page2_row {
+	position: relative;
+	@include outer-container;
+	@include row();
+	display: table;
+	margin: 0 auto;
+	top: -3em;
+	li {
+		display: inline;
+		margin: 0em 4em;
+		font-size: 0.8em;
+		color: white;
+		font-weight: 600;
+	}
+}
+
+.blog_1 {
+	margin-top: 4em;
+	padding: 0em 3em;
+}
+
+h1 {
+	font-size: 1.4em;
+	color: $nav-text;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1em;
+	color: $nav-text;
+	margin-bottom: 0.2em;
+	font-weight: 500;
+}

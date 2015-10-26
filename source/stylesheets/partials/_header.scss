@@ -1,0 +1,64 @@
+$nav-text: #484D51;
+$branding-red: #DF4A2E;
+$hover-red: #FF7C63;
+
+.wrapper {
+	@include outer-container;
+	padding: 0em 0em 0em 0em;
+}
+
+.nav {
+	height: 5em;
+	padding: 0em 0em;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.row {
+	@include row();
+	display: table;
+	margin: 0 auto;
+	float: right;
+	padding: 1.7em 1.5em 0em 0em;
+	li {
+		display: inline;
+		margin: 0em 2em;
+		font-size: 0.8em;
+		color: $nav-text;
+		font-weight: bold;
+	}
+}
+
+.logo {
+	@include row();
+	display: table;
+	margin: 0 auto;
+	float: left;
+	padding: 0.7em 0em 0em 0em;
+	li {
+		display: inline;
+		margin: 0em 0em 0em 1.5em;
+		font-size: 2em;
+		color: $branding-red;
+		font-weight: bold;
+		text-decoration: none;
+		border-bottom: 0.2em solid $branding-red;
+	}
+}
+
+.box{
+	width: 22%;
+	background-color: black;
+}
+
+a {
+	color: $nav-text;
+	padding-bottom: 1em;
+}
+
+a:hover {
+	color: $branding-red;
+	border-bottom: 0.3em solid $hover-red;
+	padding-bottom: 0.3em;
+	transition: color 0.5s ease,
+                padding-bottom 0.2s ease;
+}
