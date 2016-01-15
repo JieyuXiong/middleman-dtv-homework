@@ -2,7 +2,7 @@
   $(function(){ 
       // scroll is still position
       var scroll = $(document).scrollTop();
-      var headerHeight = $('.page-header').outerHeight();
+      var headerHeight = $('.dtv-header').outerHeight();
       //console.log(headerHeight);
       
       $(window).scroll(function() {
@@ -12,17 +12,17 @@
         // optionally emulate non-fixed positioning behaviour
       
         if (scrolled > headerHeight){
-          $('.page-header').addClass('off-canvas');
+          $('.dtv-header').addClass('off-canvas');
         } else {
-          $('.page-header').removeClass('off-canvas');
+          $('.dtv-header').removeClass('off-canvas');
         }
 
           if (scrolled > scroll){
                // scrolling down
-           $('.page-header').removeClass('fixed');
+           $('.dtv-header').removeClass('fixed');
             } else {
             //scrolling up
-            $('.page-header').addClass('fixed');
+            $('.dtv-header').addClass('fixed');
           }       
          
         scroll = $(document).scrollTop(); 

@@ -7,6 +7,10 @@ title: Page1
 
 
 .main
+	%input{:type => "radio", :name => "sort", :id => "sort-all"}
+	%input{:type => "radio", :name => "sort", :id => "sort-show"}
+	%input{:type => "radio", :name => "sort", :id => "sort-movie"}
+	%input{:type => "radio", :name => "sort", :id => "sort-live"}
 	.index_wrapper
 		.index_row
 			%section1
@@ -15,53 +19,20 @@ title: Page1
 				.line
 				.box
 					.picBox
-						%img(src="/images/index/BreakingBad.jpg")
-					.showTitle 
-						%h3 BREAKING BAD
-						%h5 5 Seasons, 62 Episodes
+						.thumbnail
+							%img(src="/images/index/BreakingBad.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/GameOfThrones.jpg")
-					.showTitle 
-						%h3 GAME OF THRONES
-						%h5 3 Seasons, 32 Episodes
+						.thumbnail
+							%img(src="/images/index/GameOfThrones.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/BetterCallSaul.gif")
-					.showTitle 
-						%h3 BETTER CALL SAUL
-						%h5 1 Seasons, 12 Episodes
+						.thumbnail
+							%img(src="/images/index/BetterCallSaul.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/homeland.jpg")
-					.showTitle 
-						%h3 HOMELAND
-						%h5 5 Seasons, 56 Episodes
-			%section1
-				.box
-					.picBox
-						%img(src="/images/index/theWalkingDead.jpg")
-					.showTitle 
-						%h3 THE WALKING DEAD
-						%h5 5 Seasons, 70 Episodes
-				.box
-					.picBox
-						%img(src="/images/index/gotham.jpg")
-					.showTitle 
-						%h3 GAME OF THRONES
-						%h5 1 Seasons, 8 Episodes
-				.box
-					.picBox
-						%img(src="/images/index/interstellar.jpg")
-					.showTitle 
-						%h3 INTERSTELLAR
-						%h5 2h 49m
-				.box
-					.picBox
-						%img(src="/images/index/once.jpg")
-					.showTitle 
-						%h3 ONCE UPON A TIME
-						%h5 2 Seasons, 23 Episodes
+						.thumbnail
+							%img(src="/images/index/Homeland.jpg")
 		.index_row
 			%section1
 				%h1.section_title Just For You
@@ -69,50 +40,190 @@ title: Page1
 				.line
 				.box
 					.picBox
-						%img(src="/images/index/newGirl.jpg")
-					.showTitle 
-						%h3 BREAKING BAD
-						%h5 5 Seasons, 62 Episodes
+						.thumbnail
+							%img(src="/images/index/newGirl.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/GameOfThrones.jpg")
-					.showTitle 
-						%h3 GAME OF THRONES
-						%h5 3 Seasons, 32 Episodes
+						.thumbnail
+							%img(src="/images/index/modern.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/BetterCallSaul.gif")
-					.showTitle 
-						%h3 BETTER CALL SAUL
-						%h5 1 Seasons, 12 Episodes
+						.thumbnail
+							%img(src="/images/index/raising-hope.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/homeland.jpg")
-					.showTitle 
-						%h3 HOMELAND
-						%h5 5 Seasons, 56 Episodes
+						.thumbnail
+							%img(src="/images/index/MadMen.jpg")
 			%section1
 				.box
 					.picBox
-						%img(src="/images/index/theWalkingDead.jpg")
-					.showTitle 
-						%h3 THE WALKING DEAD
-						%h5 5 Seasons, 70 Episodes
+						.thumbnail
+							%img(src="/images/index/theWalkingDead.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/gotham.jpg")
-					.showTitle 
-						%h3 GAME OF THRONES
-						%h5 1 Seasons, 8 Episodes
+						.thumbnail
+							%img(src="/images/index/gotham.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/interstellar.jpg")
-					.showTitle 
-						%h3 INTERSTELLAR
-						%h5 2h 49m
+						.thumbnail
+							%img(src="/images/index/interstellar.jpg")
 				.box
 					.picBox
-						%img(src="/images/index/once.jpg")
-					.showTitle 
-						%h3 ONCE UPON A TIME
-						%h5 2 Seasons, 23 Episodes
+						.thumbnail
+							%img(src="/images/index/once.jpg")
+		.index_row_menu
+			.row_index
+				%section_menu
+					%label{:for => "sort-all"} All
+					%label{:for => "sort-show"} Show
+					%label{:for => "sort-movie"} Movie
+					%label{:for => "sort-live"} Live
+		.index_row
+			%section1
+				.box{:data => "show"}
+					.picBox
+						.thumbnail
+							%img(src="/images/index/lawAndOrder.jpg")
+				.box{:data => "movie"}
+					.picBox
+						.thumbnail
+							%img(src="/images/index/flash.jpg")
+				.box{:data => "live"}
+					.picBox
+						.thumbnail
+							%img(src="/images/index/arrow.jpg")
+				.box{:data => "show"}
+					.picBox
+						.thumbnail
+							%img(src="/images/index/lieToMe.jpg")
+				.box{:data => "show"}
+					.picBox
+						.thumbnail
+							%img(src="/images/index/starwar.jpg")
+				.box{:data => "movie"}
+					.picBox
+						.thumbnail
+							%img(src="/images/index/good-dinosaur.png")
+				.box{:data => "live"}
+					.picBox
+						.thumbnail
+							%img(src="/images/index/psych.jpg")
+				.box{:data => "show"}
+					.picBox
+						.thumbnail
+							%img(src="/images/index/house.jpg")
+
+
+
+
+
+-# .main
+-# 	.index_wrapper
+-# 		.index_row
+-# 			%section1
+-# 				%h1.section_title Trending Now
+-# 				%h3.section_summary Sit Down And Have A Great Time
+-# 				.line
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/BreakingBad.jpg")
+-# 					.showTitle 
+-# 						%h3 BREAKING BAD
+-# 						%h5 5 Seasons, 62 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/GameOfThrones.jpg")
+-# 					.showTitle 
+-# 						%h3 GAME OF THRONES
+-# 						%h5 3 Seasons, 32 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/BetterCallSaul.jpg")
+-# 					.showTitle 
+-# 						%h3 BETTER CALL SAUL
+-# 						%h5 1 Seasons, 12 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/Homeland.jpg")
+-# 					.showTitle 
+-# 						%h3 HOMELAND
+-# 						%h5 5 Seasons, 56 Episodes
+-# 			%section1
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/theWalkingDead.jpg")
+-# 					.showTitle 
+-# 						%h3 THE WALKING DEAD
+-# 						%h5 5 Seasons, 70 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/gotham.jpg")
+-# 					.showTitle 
+-# 						%h3 GAME OF THRONES
+-# 						%h5 1 Seasons, 8 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/interstellar.jpg")
+-# 					.showTitle 
+-# 						%h3 INTERSTELLAR
+-# 						%h5 2h 49m
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/once.jpg")
+-# 					.showTitle 
+-# 						%h3 ONCE UPON A TIME
+-# 						%h5 2 Seasons, 23 Episodes
+-# 		.index_row
+-# 			%section1
+-# 				%h1.section_title Just For You
+-# 				%h3.section_summary Don't Worry, We Know You
+-# 				.line
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/newGirl.jpg")
+-# 					.showTitle 
+-# 						%h3 BREAKING BAD
+-# 						%h5 5 Seasons, 62 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/modern.jpg")
+-# 					.showTitle 
+-# 						%h3 MODERN FAMILY
+-# 						%h5 6 Seasons, 60 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/raising-hope.jpg")
+-# 					.showTitle 
+-# 						%h3 RAISING HOPE
+-# 						%h5 4 Seasons, 48 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/homeland.jpg")
+-# 					.showTitle 
+-# 						%h3 HOMELAND
+-# 						%h5 5 Seasons, 56 Episodes
+-# 			%section1
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/theWalkingDead.jpg")
+-# 					.showTitle 
+-# 						%h3 THE WALKING DEAD
+-# 						%h5 5 Seasons, 70 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/gotham.jpg")
+-# 					.showTitle 
+-# 						%h3 GAME OF THRONES
+-# 						%h5 1 Seasons, 8 Episodes
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/interstellar.jpg")
+-# 					.showTitle 
+-# 						%h3 INTERSTELLAR
+-# 						%h5 2h 49m
+-# 				.box
+-# 					.picBox
+-# 						%img(src="/images/index/once.jpg")
+-# 					.showTitle 
+-# 						%h3 ONCE UPON A TIME
+-# 						%h5 2 Seasons, 23 Episodes
