@@ -26,7 +26,7 @@ body {
 .box {
 	display: inline-block;
 	position: relative;
-	@include span-columns(2.95);
+	@include span-columns(3);
 	background-color: none;
 	margin-bottom: 60px;
 	@include media($tablet){
@@ -46,8 +46,6 @@ body {
 
 
 .picBox {
-	// height: 154px;
-	// display: block;
 	z-index: 1;
 	background-color: $bg;
 	cursor: pointer;

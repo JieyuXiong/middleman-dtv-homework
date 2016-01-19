@@ -45,10 +45,6 @@ body {
   -o-transition:all .3s ease-in-out;
 }
 
-// .index2_wrapper {
-// 	@include outer-container;
-// }
-
 
 .index2_page2_row {
 	position: relative;
@@ -182,18 +178,25 @@ h2 {
 }
 
 .column {
+
   // @include omega(3n);
-  display: inline-block;
+  // display: inline-block;
   padding: 0 25px;
-  -webkti-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   margin-bottom: 60px;
-  @include span-columns(3.9);
-  @include media($tablet){
-      @include span-columns (2.94);
+  // -webkti-box-sizing: border-box;
+  // -moz-box-sizing: border-box;
+  // box-sizing: border-box;
+ 
+
+  @include media($large-screen-up){
+      @include span-columns (4);
       padding: 0 15px;
-      // @include omega(2n);
+      @include omega(3n);
+  };
+  @include media($tablet){
+      @include span-columns (3 of 6);
+      padding: 0 15px;
+      @include omega(2n);
   };
   @include media($mobile){
       @include span-columns (4);
